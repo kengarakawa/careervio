@@ -1,0 +1,241 @@
+:root {
+  --nav-height: 70px;
+
+  --main-background-color: #0f4c82;
+  --secondary-background-color: #b5c7d3;
+  --main-text-color: #84898c;
+  --dark-text-color: #2e2f30;
+  /* --main-highlight-text-color: #F2D6AE;
+    --main-highlight-text-color: #F2D6AE; */
+  --main-highlight-text-color: #b5c7d3;
+  --nav-background-color: #06283d;
+  --nav-text-color: #333333;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Prompt";
+  color: var(--main-text-color);
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+main {
+  margin-top: var(--nav-height);
+}
+
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--main-background-color);
+  background: linear-gradient(
+    75deg,
+    rgba(2, 0, 36, 1) 0%,
+    var(--main-background-color) 35%,
+    var(--secondary-background-color) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#projects {
+  width: 100%;
+  background-color: teal;
+  min-height: 100vh;
+}
+
+#contact {
+  width: 100%;
+  /* background-color: #007a77; */
+  background-color:#18454B;
+  min-height: 100vh;
+}
+
+.contact-wrapper {
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:solid 1px red; 
+}
+
+#welcome-section > h1 {
+  color: var(--main-highlight-text-color);
+  font-size: 100px;
+  font-style: italic;
+  font-weight:bold;
+  line-height: 10%;
+}
+#welcome-section > h3 {
+  font-size: 50px;
+  color: var(--dark-text-color);
+
+  margin-bottom: 50px;
+}
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: var(--nav-height);
+  background-color: var(--nav-background-color);
+  color: var(--nav-text-color);
+  z-index:20;
+}
+
+#navbar-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  padding-right: 20px;
+}
+
+#navbar-wrapper div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 120px;
+  height: 100%; 
+}
+#navbar-wrapper div.svg-icon {
+    min-width:80px;
+}
+
+#navbar-wrapper a {
+  font-size: 25px;
+  font-weight:bold;
+  color: var(--main-text-color);
+  text-decoration:none;
+}
+
+.projects-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  border: solid 1px red;
+  flex-wrap: wrap;
+}
+
+.project-tile {
+  margin: 28px;
+  height: 336px;
+  min-width: 210px;
+  padding: 0px;
+  box-shadow: 10px 10px 5px 0px #000000;
+}
+.project-wrapper {
+  border-top-left-radius: 50px;
+  overflow: hidden;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skill-related {
+  width: 100%;
+  text-align: right;
+  font-family: "Impact";
+  font-size: 25px;
+  font-weight: bolder;
+  padding-right: 10px;
+}
+.skill-related ul {
+  white-space: nowrap;
+}
+.skill-related li {
+  list-style-type: none;
+}
+
+.php {
+  color: #8892bf;
+  text-shadow: 1px 1px 5px #000000;
+  font-weight: bolder;
+}
+.mysql {
+  color: #004260;
+  text-shadow: 1px 1px 5px #000000;
+  font-weight: bolder;
+}
+.sql {
+    color: #F79F0F;
+    text-shadow: 1px 1px 5px #000000;
+    font-weight: bolder;      
+}
+.oracle {
+    
+    color:#D91B1E;
+    text-shadow: 1px 1px 5px #000000;
+    font-weight: bolder;      
+}
+.flutter {    
+    color: #0E459C;
+    text-shadow: 1px 1px 5px #000000;
+    font-weight: bolder;      
+}
+.vuejs {    
+    color: #3FB27F;
+    text-shadow: 1px 1px 5px #000000;
+    font-weight: bolder;      
+}
+.reactjs {    
+    color: #57BFDA;
+    text-shadow: 1px 1px 5px #000000;
+    font-weight: bolder;      
+}
+.firebase {
+    color: #F5820D;
+    text-shadow: 1px 1px 5px #000000;
+    font-weight: bolder;          
+}
+.mongodb {
+    color: #429543;
+    text-shadow: 1px 1px 5px #000000;
+    font-weight: bolder;          
+}
+
+.project-link:hover .link::before{
+    content: '::  ';
+    color:#F5820D;
+    font-family: 'Prompt';
+    font-weight:bolder;
+    font-size:22 px;
+}
+
+div.link {
+  z-index: 10;
+  margin-top: -10px;
+
+  text-align: right;
+  padding-top: 5px;
+  padding-right: 10px;
+  background-color: #0d5353;
+  min-height: 40px;
+  text-decoration: none;
+  font-family: "Poppins";
+  color: #ffffff;
+}
+a.project-link {
+  text-decoration: none;
+  font-family: "Poppins";
+  color: #ffffff;
+}
+
+/* div.link a {
+    text-decoration: none;
+    font-family: 'Poppins';
+    color:#FFFFFF;
+    
+    
+} */
+
+@media only screen and (max-width: 768) {
+}
