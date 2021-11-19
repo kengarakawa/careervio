@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing</title>
+    
+    <style type="text/css">
+        * {
+        }
+        header {
+            position: fixed;
+            top:0px;
+            width:100vw;            
+            background-color: #12243B;
+            }
+        #nav-bar {
+            display:flex;            
+            justify-content: flex-end;
+            width:100vw;
+            padding-right:100px;
+        }
+        #nav-bar div {
+            width:18vw;
+            text-align: center;
+            padding:15px 0px 15px 0px;
+        }
+        #nav-bar div a {
+            color:white;
+            font-family:"Arial Black";
+            text-decoration:none;
+        }
+        #nav-bar div a:hover {
+            color:#CCFF33;
+            text-decoration:underline;
+        }
+        body {            
+            margin:0px;
+            margin-top:30px;
+            background-color: black;
+            background-image: url(images/gym.png);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: -80px -20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #footer {
+            width:100vw;
+            height:35px;
+            background-color:#12243B;
+            color:white;
+            position: fixed;
+            bottom: 0px;
+            text-align: center;            
+        }
+        
+        h1, h2 {
+            font-family:"Arial Black";
+            font-size:22px;
+            font-style: italic;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        blockquote {
+            font-style: italic;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size:24px;
+            background-color: teal;
+            padding:20px;
+            border-radius: 15px;
+        }
+        
+        .product-list {
+            display:flex;
+            flex-wrap: wrap;
+            
+            justify-content: flex-start;      
+            align-items: stretch;
+            flex-basis: 150px;      
+        }
+        .product-list img {
+             margin:10px;
+        }
+        .product-list img:hover {
+            border:solid 1px #CCFF33;
+       }
+        main {
+            width:50vw;
+            margin-left: 50vw;;
+            
+            background-color:gray;
+            padding-left:15px;
+            padding-right:15px;
+        }
+        #header-img {
+            width:20vw;
+            height: auto;;
+        }
+        .top-space {
+            margin-top:50px;
+        }
+        .double-top-space {
+            margin-top:60px;
+        }
+        #footer-wrap {
+            height:100%;
+            margin:auto;
+            
+        }
+        #header-wrap {
+            display: inline-flex;
+        }
+        
+        .our-product p {
+            padding: 30px 20px 0px 20px;
+            line-height: 1.5em;
+        }
+        
+        @media(max-width:400px) {
+            main {
+                width:100vw;
+                margin-left: 0px;;
+            }
+            .product-list img {
+                width:100px;
+                height:100px;
+           }
+        }
+    </style>
+    
+    
+</head>
+<header id="header">
+    <div id="header-wrap">
+    <img src="images/wtf.png" id="header-img" alt="Logo">
+    <nav id="nav-bar">
+        <div><a class="nav-link" href="#health">Health</a></div>
+        <div><a class="nav-link" href="#fitness">Fitness</a></div>
+        <div><a class="nav-link" href="#training">Training</a></div>
+        <div></div>
+    </nav>
+</div>
+</header>
+<body>
+    <main>
+        
+        <section class="double-top-space our-product">
+        <h1 id="header">Our Products</h1>
+            <blockquote>No one in the godd**n right mind could possibly buy these s**ts.</blockquote>
+            
+            <p>
+                
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum ligula vitae mi hendrerit euismod. Duis sed lectus iaculis, faucibus arcu eu, elementum enim. Aliquam auctor urna vel accumsan pharetra. Sed vulputate metus a ante egestas vestibulum. Aenean convallis porta neque et elementum. Quisque congue dolor libero, eget dictum magna congue nec. Suspendisse malesuada quam et erat porta scelerisque non non eros. Mauris orci diam, blandit viverra nibh sed, scelerisque ullamcorper eros. Proin scelerisque dignissim dolor, eget laoreet lacus aliquam vitae. Pellentesque dignissim erat eu odio posuere iaculis. Proin tempor feugiat arcu, nec iaculis velit imperdiet id. Sed nec velit erat. Aenean laoreet et turpis id egestas.</p>
+
+<p>Aliquam consequat turpis risus, nec sodales orci aliquet a. Fusce sit amet suscipit velit, vel sollicitudin odio. Morbi ut tincidunt lectus, eu tempus lacus. Vivamus fringilla porttitor mi ac lacinia. Nulla vestibulum posuere nisl at ultricies. Pellentesque scelerisque dolor ac eros sollicitudin feugiat quis sit amet quam. Vivamus hendrerit, tellus convallis ornare fermentum, dolor purus lacinia augue, cursus congue nulla lorem sit amet justo. Vivamus eget maximus erat. Curabitur et quam sit amet urna congue tempus a quis velit.</p>
+
+
+            </p>
+    </section>
+        
+        
+        <section  class="top-space">
+            <a id="health"></a>
+            <h2>Healthy Product</h2>
+            <div class="product-list">
+                <img src="https://picsum.photos/150?random=1" />    
+                <img src="https://picsum.photos/150?random=2" />    
+                <img src="https://picsum.photos/150?random=3" />
+                <img src="https://picsum.photos/150?random=4" />
+                <img src="https://picsum.photos/150?random=5" />
+                <img src="https://picsum.photos/150?random=6" />
+                <img src="https://picsum.photos/150?random=7" />
+                <img src="https://picsum.photos/150?random=8" />
+                    
+            </div>
+            
+            
+        </section>
+        
+        
+        
+        <section class="top-space">
+            <a id="fitness"></a>    
+            <h2>Fitness Supplement</h2>
+            <div class="product-list">
+            <img src="https://picsum.photos/150?random=a" />
+            <img src="https://picsum.photos/150?random=b" />
+            <img src="https://picsum.photos/150?random=c" />
+            <img src="https://picsum.photos/150?random=d" />
+            <img src="https://picsum.photos/150?random=e" />
+            <img src="https://picsum.photos/150?random=f" />
+        </div>    
+        </section>
+        <section  class="top-space">
+            <a id="training"></a>
+            <h2>Training Session</h2>
+            <div class="product-list">
+            <img src="https://picsum.photos/150?random=A" />
+            <img src="https://picsum.photos/150?random=B" />
+            <img src="https://picsum.photos/150?random=C" />
+            <img src="https://picsum.photos/150?random=D" />
+            <img src="https://picsum.photos/150?random=E" />
+            <img src="https://picsum.photos/150?random=F" />
+            <img src="https://picsum.photos/150?random=G" />
+        </div>
+        </section>
+        
+        
+        <section>
+            <h2>Fat Burning Cardio</h2>
+            <video id="video" width="320" height="240" controls>
+                <source src="images/mf.mp4"  type="video/mp4">
+            </video>
+        </section>
+    </main>    
+        <footer id="footer">
+        <section>
+            <div id="footer-wrap">
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                Recieve newsletter for free
+                <input name="email" id="email" type="email" placeholder="enter email for free newsletter" required>
+                <input type="submit" id="submit" value="  send  ">
+            </form>
+            </div>
+        </section>
+    </footer>
+    
+</body>
+
+<script>
+    const projectName = 'product-landing-page';
+</script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

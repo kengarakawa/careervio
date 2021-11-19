@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Document</title>
+    <style type="text/css">
+        * {
+            font-family: 'Open Sans',sans-serif;
+        }
+        .nav-link, #navbar header{
+            display:block;
+            padding:10px;
+            min-width:200px;
+            width:250px;
+            background-color:#CCCCCC;
+            border:solid 1px #666666;
+            font-weight:bold;                        
+        }
+        #navbar header {
+            font-size:22px;
+        }
+        .nav-link{
+            
+            
+            text-decoration: none;            
+        }
+        main {
+            position:absolute;
+            margin-left:280px;
+        }
+        #navbar {
+            position: fixed;
+            top:0px;
+            left:0px;
+        }
+        .main-section header {
+            font-weight:bold;
+            font-size:22px;
+            font-style: italic;
+        }
+        .main-section p{
+            text-indent: 60px;
+        }
+        code pre{
+            background-color:#DDDDDD;
+            color:#333333;
+            font-family: monospace;
+            padding-top:15px;
+        }
+        
+        @media only screen and (max-width:768px){
+            #main-doc {
+                postion:relative;
+                margin-left:0px;
+                margin-top:80px;
+            }
+            #navbar {
+                position:relative;
+                max-height:300px;                
+            }
+            p {
+                width:100vw;
+            }
+            code pre {
+                width:100vw;
+                margin-left:-100px;
+            }
+        }
+    </style>
+</head>
+<body>    
+    <nav id="navbar">
+        <header>Mockup Documentation</header>
+        <a class="nav-link" href="#topic_1">Topic 1</a>
+        <a class="nav-link" href="#topic_2">Topic 2</a>
+        <a class="nav-link" href="#topic_3">Topic 3</a>
+        <a class="nav-link" href="#topic_4">Topic 4</a>
+        <a class="nav-link" href="#topic_5">Topic 5</a>
+        <a class="nav-link" href="#topic_6">Topic 6</a>
+        <a class="nav-link" href="#topic_7">Topic 7</a>
+        <a class="nav-link" href="#topic_8">Topic 8</a>
+    </nav>
+    <main id="main-doc">
+        
+        
+        
+        <section class="main-section" id="topic_1">
+            <header>Topic 1</header>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, animi cumque aspernatur aliquam porro officiis, expedita et optio doloremque, sapiente commodi explicabo quisquam. Non cupiditate repudiandae saepe esse quia doloribus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sequi explicabo inventore incidunt laboriosam sint, vitae dolorem pariatur illo qui suscipit! Iste nam incidunt velit nihil atque! Non, excepturi explicabo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure aliquam cumque enim aliquid atque deleniti ratione numquam debitis nostrum! Dolores, quae beatae? Facilis laboriosam esse beatae nam molestiae necessitatibus ab.</p>
+        </section>
+        <section class="main-section" id="topic_2">
+            <header>Topic 2</header>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, animi cumque aspernatur aliquam porro officiis, expedita et optio doloremque, sapiente commodi explicabo quisquam. Non cupiditate repudiandae saepe esse quia doloribus.</p>
+            <code>
+                <pre>
+                &lt;?php
+                for($i=0;$i&lt;count($items);$i++) {
+                   printf('item %d\'s amount : %0.2f' , $i+1 , $items[$i]);   
+                    
+                }
+                </pre>
+            </code>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure aliquam cumque enim aliquid atque deleniti ratione numquam debitis nostrum! Dolores, quae beatae? Facilis laboriosam esse beatae nam molestiae necessitatibus ab.</p>
+        </section>
+        <section class="main-section" id="topic_3">
+            <header>Topic 3</header>
+            <code>
+                <pre>
+                &lt;?php
+                for($i=0;$i&lt;count($items);$i++) {
+                   printf('item %d\'s amount : %0.2f' , $i+1 , $items[$i]);   
+                    
+                }
+            </pre>
+            </code>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sequi explicabo inventore incidunt laboriosam sint, vitae dolorem pariatur illo qui suscipit! Iste nam incidunt velit nihil atque! Non, excepturi explicabo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure aliquam cumque enim aliquid atque deleniti ratione numquam debitis nostrum! Dolores, quae beatae? Facilis laboriosam esse beatae nam molestiae necessitatibus ab.</p>
+        </section>
+        <section class="main-section" id="topic_4">
+            <header>Topic 4</header>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, animi cumque aspernatur aliquam porro officiis, expedita et optio doloremque, sapiente commodi explicabo quisquam. Non cupiditate repudiandae saepe esse quia doloribus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sequi explicabo inventore incidunt laboriosam sint, vitae dolorem pariatur illo qui suscipit! Iste nam incidunt velit nihil atque! Non, excepturi explicabo.</p>
+            <code>
+                <pre>
+                &lt;?php
+                for($i=0;$i&lt;count($items);$i++) {
+                   printf('item %d\'s amount : %0.2f' , $i+1 , $items[$i]);   
+                    
+                }
+                </pre>
+            </code>
+
+        </section>
+        <section class="main-section" id="topic_5">
+            <header>Topic 5</header>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, animi cumque aspernatur aliquam porro officiis, expedita et optio doloremque, sapiente commodi explicabo quisquam. Non cupiditate repudiandae saepe esse quia doloribus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sequi explicabo inventore incidunt laboriosam sint, vitae dolorem pariatur illo qui suscipit! Iste nam incidunt velit nihil atque! Non, excepturi explicabo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure aliquam cumque enim aliquid atque deleniti ratione numquam debitis nostrum! Dolores, quae beatae? Facilis laboriosam esse beatae nam molestiae necessitatibus ab.</p>
+            <code>
+                <pre>
+                &lt;?php
+                for($i=0;$i&lt;count($items);$i++) {
+                   printf('item %d\'s amount : %0.2f' , $i+1 , $items[$i]);   
+                    
+                }
+            </pre>
+            </code>
+            <ul>
+                <li>for</li>
+                <li>while</li>
+                <li>do...while</li>
+            </ul>            
+            <code>
+            <pre>
+                &lt;?php
+                for($i=0;$i&lt;count($items);$i++) {
+                   printf('item %d\'s amount : %0.2f' , $i+1 , $items[$i]);   
+                    
+                }
+            </pre>
+            </code>
+        </section>
+        <section class="main-section" id="topic_6">
+            <header>Topic 6</header>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, animi cumque aspernatur aliquam porro officiis, expedita et optio doloremque, sapiente commodi explicabo quisquam. Non cupiditate repudiandae saepe esse quia doloribus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sequi explicabo inventore incidunt laboriosam sint, vitae dolorem pariatur illo qui suscipit! Iste nam incidunt velit nihil atque! Non, excepturi explicabo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure aliquam cumque enim aliquid atque deleniti ratione numquam debitis nostrum! Dolores, quae beatae? Facilis laboriosam esse beatae nam molestiae necessitatibus ab.</p>
+            <code>
+                <pre>
+                &lt;?php
+                for($i=0;$i&lt;count($items);$i++) {
+                   printf('item %d\'s amount : %0.2f' , $i+1 , $items[$i]);   
+                    
+                }
+            </pre>
+            </code>
+            <ul>
+                <li>for</li>
+                <li>while</li>
+                <li>do...while</li>
+            </ul>            
+            <code>
+            <pre>
+                &lt;?php
+                for($i=0;$i&lt;count($items);$i++) {
+                   printf('item %d\'s amount : %0.2f' , $i+1 , $items[$i]);   
+                    
+                }
+            </pre>
+            </code>
+        </section>
+        <section class="main-section" id="topic_7">
+            <header>Topic 7</header>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, animi cumque aspernatur aliquam porro officiis, expedita et optio doloremque, sapiente commodi explicabo quisquam. Non cupiditate repudiandae saepe esse quia doloribus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sequi explicabo inventore incidunt laboriosam sint, vitae dolorem pariatur illo qui suscipit! Iste nam incidunt velit nihil atque! Non, excepturi explicabo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure aliquam cumque enim aliquid atque deleniti ratione numquam debitis nostrum! Dolores, quae beatae? Facilis laboriosam esse beatae nam molestiae necessitatibus ab.</p>
+            <code>
+                <pre>
+                &lt;?php
+                for($i=0;$i&lt;count($items);$i++) {
+                   printf('item %d\'s amount : %0.2f' , $i+1 , $items[$i]);   
+                    
+                }
+            </pre>
+            </code>
+            <ul>
+                <li>for</li>
+                <li>while</li>
+                <li>do...while</li>
+            </ul>            
+            <code>
+            <pre>
+                &lt;?php
+                for($i=0;$i&lt;count($items);$i++) {
+                   printf('item %d\'s amount : %0.2f' , $i+1 , $items[$i]);   
+                    
+                }
+            </pre>
+            </code>
+        </section>
+        <section class="main-section" id="topic_8">
+            <header>Topic 8</header>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, animi cumque aspernatur aliquam porro officiis, expedita et optio doloremque, sapiente commodi explicabo quisquam. Non cupiditate repudiandae saepe esse quia doloribus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sequi explicabo inventore incidunt laboriosam sint, vitae dolorem pariatur illo qui suscipit! Iste nam incidunt velit nihil atque! Non, excepturi explicabo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure aliquam cumque enim aliquid atque deleniti ratione numquam debitis nostrum! Dolores, quae beatae? Facilis laboriosam esse beatae nam molestiae necessitatibus ab.</p>
+            <code>
+                <pre>
+                &lt;?php
+                for($i=0;$i&lt;count($items);$i++) {
+                   printf('item %d\'s amount : %0.2f' , $i+1 , $items[$i]);   
+                    
+                }
+            </pre>
+            </code>
+            <ul>
+                <li>for</li>
+                <li>while</li>
+                <li>do...while</li>
+            </ul>            
+            <code>
+            <pre>
+                &lt;?php
+                for($i=0;$i&lt;count($items);$i++) {
+                   printf('item %d\'s amount : %0.2f' , $i+1 , $items[$i]);   
+                    
+                }
+            </pre>
+            </code>
+        </section>
+        
+    </main>
+    
+    <script>
+        const projectName = 'technical-docs-page';
+    </script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    
+</body>
+</html>
