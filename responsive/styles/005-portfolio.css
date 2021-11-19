@@ -40,6 +40,19 @@ main {
   justify-content: center;
   align-items: center;
 }
+#welcome-section > h1 {
+    color: var(--main-highlight-text-color);
+    font-size: 100px;
+    font-style: italic;
+    font-weight:bold;
+    line-height: 10%;
+  }
+  #welcome-section > h3 {
+    font-size: 50px;
+    color: var(--dark-text-color);
+  
+    margin-bottom: 50px;
+  }
 
 #projects {
   width: 100%;
@@ -47,36 +60,8 @@ main {
   min-height: 100vh;
 }
 
-#contact {
-  width: 100%;
-  /* background-color: #007a77; */
-  background-color:#18454B;
-  min-height: 100vh;
-}
 
-.contact-wrapper {
-    width:100%;
-    height:100%;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border:solid 1px red; 
-}
 
-#welcome-section > h1 {
-  color: var(--main-highlight-text-color);
-  font-size: 100px;
-  font-style: italic;
-  font-weight:bold;
-  line-height: 10%;
-}
-#welcome-section > h3 {
-  font-size: 50px;
-  color: var(--dark-text-color);
-
-  margin-bottom: 50px;
-}
 #navbar {
   position: fixed;
   top: 0px;
@@ -120,7 +105,7 @@ main {
   justify-content: flex-start;
   align-items: center;
   height: 100%;
-  border: solid 1px red;
+  
   flex-wrap: wrap;
 }
 
@@ -229,13 +214,75 @@ a.project-link {
   color: #ffffff;
 }
 
-/* div.link a {
-    text-decoration: none;
-    font-family: 'Poppins';
-    color:#FFFFFF;
+#contact {
+    width: 100%;
+    /* background-color: #007a77; */
+    background-color:#18454B;
+    min-height: 100vh;
+    padding-top:var(--nav-height);
+  }
+  
+  .contact-wrapper {
+      
+      width:100%;
+      min-height:100%;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      
+  }
+  
+  .contact-box {
+      width:80%;
+      padding:20px;
+      
+      margin-top:30px;
+      background-color: #0f2c30;
+      color:white;
+      font-weight:bold;
+      box-shadow: 10px 10px 5px 0px #000000;
+      font-size:40px;     
+  }
+  .contact-box a {
+      text-decoration: none;
+      color:white;
+  }
+  
+@media only screen and (max-width: 450px) {
     
+    #navbar {
+        display:none;
+    }
     
-} */
-
-@media only screen and (max-width: 768) {
+    #welcome-section >h1 {         
+            font-size: 35px;
+            font-weight:bolder;        
+    }
+    #welcome-section >h3 {         
+        font-size: 20px;        
+    }
+    
+    .project-tile {
+        margin: 14px;
+        height: 168px;
+        min-width: 160px;
+        padding: 0px;
+        box-shadow: 10px 10px 5px 0px #000000;
+      }
+      
+      .project-wrapper {  
+        height: 170px;   
+      }
+      .project-wrapper div.link {
+          font-size:13px;
+      }
+      .skill-related {
+          font-size:13px;
+          padding-right:5px;          
+      }
+      .contact-box {
+          font-size:20px;
+      }
 }
